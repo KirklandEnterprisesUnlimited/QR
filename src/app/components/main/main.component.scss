@@ -191,3 +191,19 @@ li a {
         margin-bottom: 3rem;
     }
 }
+
+.i-want-one-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    
+    .i-want-one-btn {
+        font-family: Gilroy-ExtraBold;
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        padding: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
