@@ -13,7 +13,7 @@ export class MainComponent implements OnInit {
   constructor(public imageService: ImageService) { }
 
   firstName = "Stephen";
-  lastName = "Kirkland";
+  lastName = "Kirk";
 
   ngOnInit() {
   }
