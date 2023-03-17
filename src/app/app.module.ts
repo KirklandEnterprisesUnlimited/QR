@@ -7,11 +7,13 @@ import { MainComponent } from './components/main/main.component';
 import { ImageService } from './services/image.service';
 
 import { NgxVcardModule } from "ngx-vcard";
+import { IWantOneComponent } from './pages/i-want-one/i-want-one.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    IWantOneComponent
   ],
   imports: [
     BrowserModule,
