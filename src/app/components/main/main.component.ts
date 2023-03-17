@@ -31,4 +31,8 @@ export class MainComponent implements OnInit {
     note: "Creator of the QR Virtual Business Card"
   };
 
+  public goToForm() {
+    window.open(`https://docs.google.com/forms/d/e/1FAIpQLSe5K2m4nwe89oWBzhw2gkXpgIpufygNnPnR9g-46-dHfsAb0g/viewform?vc=0&c=0&w=1&flr=0`, "_blank");
+  }
+
 }
