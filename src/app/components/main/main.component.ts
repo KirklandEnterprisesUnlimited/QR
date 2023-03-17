@@ -12,13 +12,16 @@ export class MainComponent implements OnInit {
 
   constructor(public imageService: ImageService) { }
 
+  firstName = "Stephen";
+  lastName = "Kirk";
+
   ngOnInit() {
   }
 
   public vCard: VCard = {
     name: {
-      firstNames: "Stephen",
-      lastNames: "Kirkland",
+      firstNames: this.firstName,
+      lastNames: this.lastName,
     },
     telephone: ["912-536-7419"],
     email: ["skirkland.job@gmail.com"],
@@ -30,5 +33,9 @@ export class MainComponent implements OnInit {
     photo: "Li4vLi4vYXNzZXRzL2ltYWdlcy9sb2dvcy9LRVVfTG9nb19GdWxsQ29sb3IucG5n",
     note: "Creator of the QR Virtual Business Card"
   };
+
+  public goToForm() {
+    window.open(`https://docs.google.com/forms/d/e/1FAIpQLSe5K2m4nwe89oWBzhw2gkXpgIpufygNnPnR9g-46-dHfsAb0g/viewform?vc=0&c=0&w=1&flr=0`, "_blank");
+  }
 
 }
