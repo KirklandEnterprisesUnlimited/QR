@@ -1,13 +1,11 @@
 export abstract class vCardBase {
-    constructor(
-        private firstName: string,
-        private lastName = "Kirkland",
-        private occupation = "CEO and Founder of Kirkland Enterprises Unlimited, LLC",
-        private phoneNumber = "912-536-7419",
-        private email = "kirklandenterprisesunlimited@gmail.com"
-    )
-    {}
-
+    constructor(){}
+    public firstName: string;
+    public lastName: string;
+    public companyName: string;
+    public occupation: string;
+    public phoneNumber: string;
+    public email: string;
     public youtube: string;
     public website: string;
     public facebook: string;
