@@ -10,7 +10,7 @@
             <section class="top-part-of-card">
                 <div class="name-side">
                     <h1><span class="name-span">{{firstName}} {{lastName}}</span></h1>
-                    <h2>{{occupation}}</h2>
+                    <p>{{occupation}}</p>
                 </div>
                 <div class="logo-side">
                     <div class="logo-container">
@@ -20,7 +20,8 @@
             </section>
             <section class="bottom-part-of-card">
                 <p><a href="tel:{{phoneNumber}}">{{phoneNumber}}</a></p>
-                <p><a href="mailto:{{email}}">{{email}}</a></p>
+                <p class="emailText"><a href="mailto:{{email}}">{{email}}</a></p>
+                <p><a href="{{website}}" target="_blank">{{website}}</a></p>
             </section>
         </div>
     </div>

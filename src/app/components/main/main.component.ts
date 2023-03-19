@@ -43,4 +43,8 @@ export class MainComponent implements OnInit {
     window.open(`https://forms.gle/SBqvsStZRe8oEQQD9`, "_blank");
   }
 
+  public goToWebsite() {
+    window.open(`${this.website}`, "_blank");
+  }
+
 }
