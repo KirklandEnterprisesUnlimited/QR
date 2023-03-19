@@ -7,6 +7,7 @@ export class ImageService {
 
   public flamingo: string = "assets/images/people/flamingo.jpg";
   public profile: string = "assets/images/people/profile.jpg";
+  public eddieB: string = "assets/images/people/eddie_b.jpg";
 
   constructor() { }
 }

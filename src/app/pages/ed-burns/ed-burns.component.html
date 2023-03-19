@@ -1,0 +1,57 @@
+<!-- https://medium.com/tech-insights/how-to-deploy-angular-apps-to-github-pages-gh-pages-896c4e10f9b4 -->
+<div class="app-container">
+    <div class="picture-row">
+        <div class="picture-container">
+            <img [src]="imageService.eddieB" alt="Eddie B">
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card-part">
+            <section class="top-part-of-card">
+                <div class="name-side">
+                    <h1><span class="name-span">{{firstName}} {{lastName}}</span></h1>
+                    <p>{{occupation}}</p>
+                </div>
+                <div class="logo-side">
+                    <div class="logo-container">
+                        <img src="assets/images/logos/lightstream_logo.png" alt="Lightstream Logo">
+                    </div>
+                </div>
+            </section>
+            <section class="bottom-part-of-card">
+                <p><a href="tel:{{phoneNumber}}">{{phoneNumber}}</a></p>
+                <p class="emailText"><a href="mailto:{{email}}">{{email}}</a></p>
+                <p><a href="{{website}}" target="_blank">{{website}}</a></p>
+            </section>
+        </div>
+    </div>
+
+    <div class="social-media-full-container" hidden>
+        <ul class="top-row">
+            <li><a href="https://www.instagram.com/bigmoneykirk/" target="_blank"> <i class="fab fa-instagram"></i> </a>
+            </li>
+            <li><a href="https://www.m.facebook.com/stevokirk/" target="_blank"> <i class="fab fa-facebook-f"></i> </a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/bigmoneykirk/" target="_blank"> <i class="fab fa-linkedin-in"></i>
+                </a></li>
+            <li><a href="https://twitter.com/StevoKirk" target="_blank"> <i class="fab fa-twitter"></i> </a></li>
+        </ul>
+        <ul>
+            <li><a href="https://kirklandenterprises.org/home" target="_blank"><i class="fa-thin fa-globe"></i></a></li>
+            <li><a href="https://t.snapchat.com/6LRG4idN" target="_blank"><i class="fab fa-snapchat-ghost"></i></a></li>
+            <li><a href="https://www.tiktok.com/@bigmoneykirk" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+            <li><a href="https://youtube.com/@BigMoneyKirk" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="download-vcf">
+        <a href="javascript:void(0)" id="downloadButton" [vcdDownloadVCard]="vCard">
+            <span>Add to Phone</span>
+        </a>
+    </div>
+    <section class="i-want-one-container">
+        <button class="btn i-want-one-btn" (click)="goToForm()">I Want One!</button>
+    </section>
+</div>
