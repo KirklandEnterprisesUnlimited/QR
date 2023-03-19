@@ -17,7 +17,7 @@ export class MainComponent implements OnInit {
 
   occupation = "CEO and Founder of Kirkland Enterprises Unlimited, LLC";
   phoneNumber = "912-536-7419";
-  email = "kirklandenterprisesunlimited@gmail.com";
+  email = "vcard@keultd.com";
 
   ngOnInit() {
   }
