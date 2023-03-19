@@ -34,10 +34,11 @@ $card-color: #e1e1e1;
     // border-radius: 5px;
     margin: 40px 10px;
     // box-shadow: 0px 5px 30px rebeccapurple, -15px 15px 0.35rem grey, 3px -3px 1rem white;
-    animation: floatingCard 6.5s ease-in-out infinite;
+    // animation: floatingCard 6.5s ease-in-out infinite;
     text-align: center;
     font-family: Gilroy-Light;
     width: 29rem;
+    height: 14rem;
     background: $card-color;
 }
 
@@ -50,32 +51,55 @@ $card-color: #e1e1e1;
     }
 }
 
-.personal-info {
-    margin: 0 20px;
-    // color: lavender;
+.top-part-of-card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 0.75rem;
+    }
 
     .name-span {
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
+        // padding: 0.5rem 1rem;
+        // border-radius: 5px;
     }
+}
 
-    p {
-        a{
-            // color: lightblue;
-        }
-    }
+.logo-side .logo-container img {
+    height: 2rem;
 }
 
 h1 {
     font-family: Gilroy-ExtraBold;
 }
 
-img {
+.picture-container img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
     border: 5px solid $card-color;
     // box-shadow: 0px 5px 30px rebeccapurple, -15px 15px 0.35rem grey, 3px -3px 1rem white;
+}
+
+.bottom-part-of-card {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: end;
+
+    p {
+        margin: 0;
+        a {
+            color: black;
+        }
+    }
 }
 
 ul{
@@ -126,7 +150,7 @@ li a {
     left: 0;
     width: 101%;
     height: 100%;
-    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+    // background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
     background-size: 400%;
 }
 
@@ -137,7 +161,7 @@ li a {
     left: 0;
     width: 101%;
     height: 100%;
-    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+    // background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
     background-size: 400%;
     filter: blur(20px);
     transition: 0.5s;
@@ -201,8 +225,7 @@ li a {
     
     .i-want-one-btn {
         font-family: Gilroy-ExtraBold;
-        background: rgb(238,174,202);
-        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        background: $card-color;
         padding: 0.5rem;
         border: none;
         border-radius: 5px;
