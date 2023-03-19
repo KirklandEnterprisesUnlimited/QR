@@ -39,7 +39,7 @@ export class MainComponent implements OnInit {
   };
 
   public goToForm() {
-    window.open(`https://docs.google.com/forms/d/e/1FAIpQLSe5K2m4nwe89oWBzhw2gkXpgIpufygNnPnR9g-46-dHfsAb0g/viewform?vc=0&c=0&w=1&flr=0`, "_blank");
+    window.open(`https://forms.gle/SBqvsStZRe8oEQQD9`, "_blank");
   }
 
 }
