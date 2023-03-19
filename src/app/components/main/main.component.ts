@@ -16,7 +16,7 @@ export class MainComponent implements OnInit {
   lastName = "Kirkland";
 
   occupation = "CEO and Founder of Kirkland Enterprises Unlimited, LLC";
-  phoneNumber = "912-536-7419";
+  phoneNumber = "912-521-4941";
   email = "vcard@keultd.com";
 
   ngOnInit() {
@@ -31,7 +31,7 @@ export class MainComponent implements OnInit {
     email: [this.email],
     workEmail: [this.email],
     role: this.occupation,
-    url: "https://BigMoneyKirk.github.io/QR/",
+    url: "bigmoneykirk.com",
     sound: "../../assets/sounds/Stephen_Kirkland.m4a",
     logo: "../../assets/images/logos/KEU_Logo_FullColor.png",
     photo: "Li4vLi4vYXNzZXRzL2ltYWdlcy9sb2dvcy9LRVVfTG9nb19GdWxsQ29sb3IucG5n",
