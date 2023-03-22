@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/01faf0c2-8783-4629-bf79-60029c78814c/resourceGroups/vCard_ResourceGroup/providers/Microsoft.Web/sites/vCard-KEU",
+    "appService.deploySubpath": "dist\\QR"
+}
