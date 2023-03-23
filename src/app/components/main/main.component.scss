@@ -56,10 +56,23 @@
         border-radius: 5px;
     }
 
-    p {
+    p, h4 {
         a{
             color: lightblue;
         }
+    }
+
+    h5 {
+        margin: 0 !important;
+        letter-spacing: 0.25rem;
+    }
+
+    h4 {
+        margin: 0 !important;
+    }
+
+    h6 {
+        margin: 0.35rem !important;
     }
 }
 
@@ -89,7 +102,7 @@ li {
 li a {
     text-decoration: none;
     backdrop-filter: blur(10px);
-    border: 2px solid lightskyblue;
+    // border: 2px solid lightskyblue;
     border-radius: 5px;
     cursor: pointer;
     color: white;
@@ -188,8 +201,7 @@ li a {
     max-width: 33rem;
     margin: 0 auto;
     .top-row,
-    .second-row,
-    .third-row {
+    .second-row {
         margin-bottom: 3rem;
     }
 }
@@ -209,3 +221,42 @@ li a {
         cursor: pointer;
     }
 }
+
+@keyframes pulse {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+  }
+  
+  @mixin pulse-animation() {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  
+  .pulse {
+    @include pulse-animation();
+  }
+  
+  
+  
+  

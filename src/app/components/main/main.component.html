@@ -9,7 +9,9 @@
         <div class="card-part">
             <div class="personal-info">
                 <h1><span class="name-span">{{firstName}} {{lastName}}</span></h1>
-                <h4>{{occupation}}</h4>
+                <h5>{{occupation}}</h5>
+                <h6>of</h6>
+                <h4><a href="{{website}}" target="_blank">{{company}}</a></h4>
                 <p><a href="tel:{{phoneNumber}}">{{phoneNumber}}</a></p>
                 <p><a href="mailto:{{email}}">{{email}}</a></p>
             </div>
@@ -27,19 +29,15 @@
             <li><a href="https://twitter.com/StevoKirk" target="_blank"> <i class="fab fa-twitter"></i> </a></li>
         </ul>
         <ul class="second-row">
-            <li><a href="https://kirklandenterprises.org/home" target="_blank"><i
-                        class="fa-thin fa-globe"></i></a></li>
             <li><a href="https://t.snapchat.com/6LRG4idN" target="_blank"><i class="fab fa-snapchat-ghost"></i></a></li>
             <li><a href="https://www.tiktok.com/@bigmoneykirk" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
             <li><a href="https://youtube.com/@BigMoneyKirk" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.paypal.com/paypalme/stephenkirkland" target="_blank"><i class="fa-brands fa-paypal"></i></a></li>
         </ul>
         <ul class="third-row">
-            <li><a href="https://www.paypal.com/paypalme/stephenkirkland" target="_blank"><i class="fa-brands fa-paypal"></i></a></li>
             <li><a href="https://cash.app/$BigMoneyKirk93" target="_blank"><i class="fa-sharp fa-solid fa-dollar-sign"></i></a></li>
             <li><a href="https://venmo.com/u/BigMoneyKirk" target="_blank"><i class="fa-brands fa-vimeo-v"></i></a></li>
             <li><a href="https://www.amazon.com/hz/wishlist/ls/2J7NNSIEVNUYX?ref_=wl_share" target="_blank"><i class="fa-brands fa-amazon"></i></a></li>
-        </ul>
-        <ul>
             <li><a href="https://mssociety.donordrive.com/index.cfm?fuseaction=donate.participant&participantID=295549" target="_blank"><i class="fa-regular fa-bicycle"></i></a></li>
         </ul>
     </div>
@@ -50,6 +48,6 @@
         </a>
     </div>
     <section class="i-want-one-container">
-        <button class="btn i-want-one-btn" (click)="goToForm()">I Want One!</button>
+        <button class="btn i-want-one-btn pulse" (click)="goToForm()">I Want One!</button>
     </section>
 </div>
