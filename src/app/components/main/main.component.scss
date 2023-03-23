@@ -1,3 +1,5 @@
+$dark-blue: #03003c;
+
 .app-container {
     height: 100%;
     min-height: 98vh;
@@ -51,7 +53,7 @@
     color: lavender;
 
     .name-span {
-        background-color: rgba(3,0,60,1);
+        background-color: $dark-blue;
         padding: 0.5rem 1rem;
         border-radius: 5px;
     }
@@ -219,6 +221,7 @@ li a {
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        color: $dark-blue;
     }
 }
 
