@@ -34,7 +34,7 @@ export class MainComponent implements OnInit {
     email: [this.email],
     workEmail: [this.email],
     role: this.occupation,
-    url: "bigmoneykirk.com",
+    url: "https://www.bigmoneykirk.com",
     sound: "../../assets/sounds/Stephen_Kirkland.m4a",
     logo: "../../assets/images/logos/KEU_Logo_FullColor.png",
     photo: "Li4vLi4vYXNzZXRzL2ltYWdlcy9sb2dvcy9LRVVfTG9nb19GdWxsQ29sb3IucG5n",
