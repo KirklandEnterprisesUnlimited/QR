@@ -14,11 +14,11 @@ export class EdBurnsComponent implements OnInit {
   firstName = "Edward";
   lastName = "Burns";
 
-  occupation = "Inside Sales Rep";
+  occupation = "Territory Sales Manager";
   phoneNumber = "678-483-7310";
-  email = "edward.burns@lightstream.tech";
+  email = "edward.burns@lightstream.io";
 
-  website = `www.lightstream.tech`;
+  website = `www.lightstream.io`;
 
   note = `vCard's first official prototype model`;
 

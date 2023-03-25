@@ -1,7 +1,9 @@
+$dark-blue: #03003c;
+
 body {
-    background: linear-gradient(90deg, rgba(3,0,60,1) 0%, rgba(0,0,162,1) 35%, rgba(136,0,255,1) 100%); //https://cssgradient.io/
+    // background: linear-gradient(90deg, rgba(3,0,60,1) 0%, rgba(0,0,162,1) 35%, rgba(136,0,255,1) 100%); //https://cssgradient.io/
     //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(136,0,255,1) 100%);
-    // background: black;
+    background: black;
 }
 
 @font-face {
@@ -13,3 +15,38 @@ body {
     font-family: Gilroy-Light;
     src: url("./assets/fonts/Gilroy-Light.otf") format("opentype");
 }
+
+@keyframes pulse {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+  }
+  
+  @mixin pulse-animation() {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  
+  .pulse {
+    @include pulse-animation();
+  }

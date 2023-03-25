@@ -2,6 +2,7 @@ $card-border-color: limegreen;
 $card-color: #e1e1e1;
 $card-padding: 1.5rem;
 $name-part-padding: 0.475rem;
+$dark-blue: #03003c;
 
 .app-container {
     height: 100%;
@@ -261,5 +262,6 @@ li a {
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        color: $dark-blue;
     }
 }

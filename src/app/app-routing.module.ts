@@ -8,7 +8,7 @@ import { IWantOneComponent } from './pages/i-want-one/i-want-one.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '', component: MainComponent },
+  { path: '', component: EdBurnsComponent },
   { path: RoutingConstant.IWantOne, component: IWantOneComponent },
   { path: RoutingConstant.EdBurns, component: EdBurnsComponent }
 ];
